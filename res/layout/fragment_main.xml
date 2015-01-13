@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" >
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:text="@string/tvWelcome"
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rlOr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btnLoginLink"
+            android:layout_marginTop="36dp" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toLeftOf="@+id/tvOr"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/tvOr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/tvOr"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toRightOf="@+id/tvOr"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/btnLogin"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegisterLink"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rlOr"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/btnRegister"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

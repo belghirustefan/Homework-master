@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- The main content view -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/navbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_navbar" />
+
+            <RelativeLayout
+                android:id="@+id/fragments_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/navbar" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
